@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+static const int dbg = 0;
+#define dout if(dbg)cout
 #define rep(i, from, to) for(int i=from;i<int(to);++i)
 #define trav(a,x) for(auto& a : x)
 #define all(x) x.begin(), x.end()
