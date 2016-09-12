@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdio>
 #include <cmath>
-
+#include <cstdlib>
 int solve() {
 	int64_t first;
 	int64_t second;
@@ -9,12 +9,7 @@ int solve() {
 		return 0;
 	}
 	int64_t answer;
-	if(first > second) {
-		answer = first - second;
-	} else {
-		answer = second - first;
-	}
-	printf("%ld\n", answer);
+	printf("%ld\n", labs(first-second));
 	return 1;
 }
 

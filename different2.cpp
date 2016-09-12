@@ -9,14 +9,7 @@ int solve() {
 	if(!(cin >> first >> second)) {
 		return 0;
 	}
-	int64_t answer;
-
-	if(first > second) {
-		answer = first - second;
-	} else {
-		answer = second - first;
-	}
-	cout << answer << endl;
+	cout << labs(first-second) << endl;
 	return 1;
 }
 
