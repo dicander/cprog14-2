@@ -8,11 +8,11 @@ struct top{
 	top() {cout << "top default" << endl;}
 };
 
-struct left:virtual top{
+struct left:top {
 	left():top(1) {cout << "left default" << endl;}
 };
-struct right:virtual top{
-	right():top(2) {cout << "right default" << endl;}
+struct right:top {
+	right():top(1) {cout << "right default" << endl;}
 };
 struct bottom:left,right{
     bottom():left(), right()
