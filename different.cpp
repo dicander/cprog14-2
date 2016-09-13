@@ -8,7 +8,6 @@ int solve() {
 	if(scanf("%ld %ld", &first, &second)==EOF) {
 		return 0;
 	}
-	int64_t answer;
 	printf("%ld\n", labs(first-second));
 	return 1;
 }
