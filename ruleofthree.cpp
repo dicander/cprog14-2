@@ -2,7 +2,7 @@
 using namespace std;
 
 struct widget {
-	widget() {cout << "default" << endl;} // Number 0
+	widget() {cout << "default" << endl;} // Not part of RO3 or 5
 
 	virtual ~widget() {cout << "destructor" << endl;} // 1
 	widget(const widget& rhs) {cout << "copy" << endl;} // 2
