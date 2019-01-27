@@ -1,0 +1,25 @@
+* Getting started with Kattis, see the Kattis Catalogue
+    different.cpp and different2.cpp
+    both solve the kattis problem different in different ways.
+    explain both approaches in detail.
+    Consider submitting them to Kattis.
+
+* Construction and destruction
+    Explain Rule Of Three (or five).
+    Show how default constructors can be deleted and explain the behaviour.
+    explain with boxes and arrows diagrams how arrays and variables get allocated and run on the stack and heap.
+    Destruction: Show with valgrind or the compiler flag -fsanitize=leak,undefined,address what happens if you
+    try to delete null. Also show if they work despite the errors.
+
+* Namespaces
+    Using directives. What namespaces are good for.
+
+* Polymorphism of C++.
+    Ad hoc polymorphism:
+        functions: Show that in C++ you can have overloaded functions (same name, different set of parameters)
+        operators: Show at least one example of operator overloading.
+    Subtyping polymorphism
+        Coming this week on the lectures, inheritance and virtual, but explain the difference between override and overload
+        (överskuggning och överlagring)
+    Parametric polymorphism
+        Templates, coming later, but a few examples included
