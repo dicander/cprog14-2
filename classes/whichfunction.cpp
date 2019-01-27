@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 struct base{
   void bar(double a){
     std::cout << "base->bar(double) a = " << a << std::endl;
@@ -15,12 +16,14 @@ struct base{
   }
   };
 
+
 struct derived:public base{
   void bar(int a, int b){
     std::cout << "derived->bar(int) a = " << a << std::endl;
   }
-  using base::bar;
+  //using base::bar;
 };
+
 
 int main(){
   base b;

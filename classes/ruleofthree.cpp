@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 struct widget {
 	widget() {cout << "default" << endl;} // Not part of RO3 or 5
 
@@ -13,7 +14,9 @@ struct widget {
 
 };
 
+
 struct auto_generated{};
+
 
 int main() {
 	widget a;
