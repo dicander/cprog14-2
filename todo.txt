@@ -3,6 +3,8 @@
     both solve the kattis problem different in different ways.
     explain both approaches in detail.
     Consider submitting them to Kattis.
+    In the Kattis folder there is also a file with the programming contest C++ template. It's good to show why these
+    are good for contests but bad for labs and industry programming.
 
 * Construction and destruction
     Explain Rule Of Three (or five).
