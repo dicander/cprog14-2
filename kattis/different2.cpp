@@ -1,7 +1,9 @@
 #include <iostream>
 #include <cstdint>
 
+
 using namespace std;
+
 
 int solve() {
 	int64_t first;
@@ -12,6 +14,7 @@ int solve() {
 	cout << labs(first-second) << endl;
 	return 1;
 }
+
 
 int main() {
 	cin.sync_with_stdio(false);
