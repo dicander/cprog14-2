@@ -7,10 +7,12 @@ struct widget {
 
 	virtual ~widget() {cout << "destructor" << endl;} // 1
 	widget(const widget& rhs) {cout << "copy" << endl;} // 2
-	widget& operator=(const widget& rhs) {cout << "assignment" << endl;} // 3
+	widget& operator=(const widget& rhs) {cout << "assignment" << endl;
+    return *this;} // 3
 
 	widget(widget&& rhs) {cout << "move" << endl;}//4
-	widget& operator=(widget&& rhs) {cout << "move assignment" << endl;} // 5
+	widget& operator=(widget&& rhs) {cout << "move assignment" << endl;
+    return *this;} // 5
 
 };
 
