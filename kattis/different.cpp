@@ -17,5 +17,4 @@ int solve() {
 
 int main() {
 	while(solve());
-	return 0;
 }
