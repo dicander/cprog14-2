@@ -7,7 +7,7 @@
 int solve() {
 	int64_t first;
 	int64_t second;
-	if(scanf("%ld %ld", &first, &second)==EOF) {
+	if(scanf("%lld %lld", &first, &second)==EOF) {
 		return 0;
 	}
 	printf("%ld\n", labs(first-second));
