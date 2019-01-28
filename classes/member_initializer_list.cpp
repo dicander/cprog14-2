@@ -6,8 +6,9 @@ using namespace std;
 
 
 struct foo {
-  foo(string s):name(s){};
-  string name;
+  foo(string s):name(s){ cout << a << endl;};
+  const string name;
+  int a;
 };
 
 
