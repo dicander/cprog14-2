@@ -4,25 +4,26 @@
 using namespace std;
 
 
-int overloaded(int a) {
+void overloaded(int a) {
     cout << "overloaded(int)" << endl;
 }
 
 
-int overleaded(double a) {
+void overloaded(double a) {
     cout << "overloaded(double)" << endl;
 }
 
 
 struct widget {
-    widget operator-(const widget& rhs) {
+    widget& operator-(const widget& rhs) {
         cout << "overloaded inside struct" << endl;
+        return *this;
     }
 
 };
 
 
-widget operator+(const widget& lhs, const widget& rhs) {
+widget& operator+(widget& lhs, widget& rhs) {
     cout << "overloaded outside struct!" << endl;
     return lhs;
 }
