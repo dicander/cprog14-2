@@ -10,11 +10,12 @@ int solve() {
 	if(scanf("%lld %lld", &first, &second)==EOF) {
 		return 0;
 	}
-	printf("%ld\n", labs(first-second));
+	printf("%lld\n", llabs(first-second));
 	return 1;
 }
 
 
 int main() {
+	std::cin.sync_with_stdio(false);
 	while(solve());
 }

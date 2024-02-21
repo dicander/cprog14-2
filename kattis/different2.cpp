@@ -11,7 +11,7 @@ int solve() {
 	if(!(cin >> first >> second)) {
 		return 0;
 	}
-	cout << labs(first-second) << endl;
+	cout << llabs(first-second) << endl;
 	return 1;
 }
 
