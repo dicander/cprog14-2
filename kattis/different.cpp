@@ -5,8 +5,8 @@
 
 
 int solve() {
-	int64_t first;
-	int64_t second;
+	long long first;
+	long long second;
 	if(scanf("%lld %lld", &first, &second)==EOF) {
 		return 0;
 	}

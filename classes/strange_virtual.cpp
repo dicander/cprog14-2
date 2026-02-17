@@ -1,7 +1,7 @@
 #include <iostream>
 //WAT
 struct base{
-        virtual base& operator=(const base& rhs){
+        virtual base& operator=(const base& rhs) {
                 std::cout << "base" << std::endl;
                 return *this;
         }
@@ -9,7 +9,7 @@ struct base{
 };
 
 struct derived:public base{
-        base& operator=(const base& rhs){
+        base& operator=(const base& rhs) override {
                 std::cout << "derived" << std::endl;
                 return *this;
         }

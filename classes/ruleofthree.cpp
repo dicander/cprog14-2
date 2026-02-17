@@ -17,7 +17,7 @@ struct widget {
 };
 
 
-struct auto_generated{};
+struct auto_generated {};
 
 
 int main() {
